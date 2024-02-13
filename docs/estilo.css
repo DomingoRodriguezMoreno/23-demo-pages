@@ -1,0 +1,65 @@
+/* Hace que la barra de navegacion no sea visible*/
+nav{
+    display: none;
+}
+
+
+article h2 {
+    text-align: center; /*  centra el texto */
+    border-radius: 10px; /* Redondea las esquinas */
+    background-color: blue; 
+    box-shadow: goldenrod 20px 10px 5px; /*  */
+    margin: 15px auto;
+    width: 50%;
+}
+
+/* Declara una fuente de texto en base a un archivo */
+
+h1,
+h2,
+h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*  Utiliza la fuente definida anteriormente */
+}
+
+h1 {
+    border-bottom: 4px double goldenrod;
+    text-align: center;
+}
+
+p.relleno {
+    color: grey;
+    font-style: italic;
+}
+
+.relleno[title]::after {
+    content: "[" attr(title) "]";
+    background-color: yellow;
+    color: blue;
+}
+
+article section {
+    background-color: silver;
+    background-image: url(../figuras/Test-Dummy-Tux.96.png);
+    background-repeat: repeat-y;
+    padding-left: 96px;
+    margin: 2.5em;
+}
+
+img {
+    float: right; /* Alinea la imagen a la derecha */
+    border: double green 4px;
+    background-color: white;
+    padding: 10px;
+}
+
+
+aside ol {
+    list-style-type: lower-roman;
+}
+/*el valor junto a n indica cada cuanto se repite 3n = cada 3*/
+/*el valor junto a + indica a cual se le aplica +1 = al primero*/
+aside ol li:nth-child(3n + 1) {
+    text-transform: uppercase;
+    color: brown;
+}
+
